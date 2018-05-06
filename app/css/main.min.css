@@ -14238,6 +14238,17 @@ body {
       left: 10%; }
   .home-second .article-text {
     text-align: justify; }
+  .home-second .article .quotation {
+    width: 400px;
+    margin: auto; }
+    .home-second .article .quotation-p {
+      text-align: center;
+      font-size: 2em;
+      color: #FFC000; }
+    .home-second .article .quotation .author {
+      font-size: 1em;
+      text-align: right;
+      color: #333; }
 
 body .mm-menu_offcanvas {
   z-index: 2000; }

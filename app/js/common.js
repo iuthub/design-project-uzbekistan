@@ -18,7 +18,6 @@ $('.discover').click(function(){
     scrollTop:$('.home-second').position().top
   }, 1000);
 });
-
 /*MMENU for Bootstrap*/
 // $(document).ready(function() {
 //    $(".navbar-collapse").mmenu({
