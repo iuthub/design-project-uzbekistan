@@ -1,0 +1,106 @@
+.home
+	&-background
+		background-image: url('../img/home-bg.jpg')
+		height: 100vh
+		background-position: center
+		background-size: cover
+	&-background::before
+		content: ""
+		background-color: rgba(0,0,0,.5)
+		position: absolute
+		left: 0
+		top: 0
+		right: 0
+		bottom: 0
+		z-index: 0
+	.navbar
+		// height: 50px
+		&-brand
+			position: relative
+			img
+				width: 150px
+	.transparent-nav
+		.collapse
+			.navbar-nav
+				.nav-item
+					.nav-link
+						color: #fff!important
+	.row
+		position: relative
+		z-index: 1
+		.container
+			.welcome, .uzbekistan, .motto
+				padding: 0
+				margin: 0
+				text-align: center
+				width: 100%
+				color: #fff
+				position: relative
+			.welcome
+				margin-top: 15vh
+				font-size: 5em
+				font-weight: 900
+			.uzbekistan
+				bottom: 30px
+				font-size: 3em
+				font-weight: 100
+			.motto
+				font-weight: 900
+				bottom: 40px
+				font-size: 1.7em
+			.gold
+			  color: $gold
+
+	.row
+		.form-search
+			width: 50%
+			border-bottom: 2px solid #fff
+			.search-input
+				background-color: transparent
+				border: none
+				width: 90%
+				color: #fff
+				outline: none
+				padding: 0 20px
+			.search-input::placeholder
+				color: #fff
+			.submit
+				background-color: transparent
+				border: none
+				color: #fff
+				outline: none
+				cursor: pointer
+	.row
+		.container
+			.center
+				text-align: center
+				margin-top: 50px
+				.discover
+					color: $gold
+					border: 2px solid $gold
+					padding: 2px 30px
+					border-radius: 50px
+					text-align: center
+					font-weight: 900
+					text-decoration: none
+	&-second
+		height: 100vh
+		.gold-line
+			width: 15%
+			background-color: $gold
+			height: 3px
+			position: relative
+			top: 20vh
+		div
+			.page-title
+				margin-top: 15vh
+				font-size: 1.5em
+				color: #333
+				font-weight: 900
+				.gold
+					color: $gold
+					position: relative
+					left: 10%
+		.article
+			&-text
+				text-align: justify

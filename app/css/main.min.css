@@ -1,16 +1,23 @@
 @font-face {
-  font-family: "roboto-example";
+  font-family: "comfortaa";
   font-weight: normal;
   font-style: normal;
-  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
-  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
+  src: url("../fonts/Comfortaa/Comfortaa-Regular.eot");
+  src: url("../fonts/Comfortaa/Comfortaa-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Comfortaa/Comfortaa-Regular.woff") format("woff"), url("../fonts/Comfortaa/Comfortaa-Regular.ttf") format("truetype"); }
 
 @font-face {
-  font-family: "roboto-example";
-  font-weight: bold;
+  font-family: "comfortaa";
+  font-weight: 900;
   font-style: normal;
-  src: url("../fonts/RobotoBold/RobotoBold.eot");
-  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"); }
+  src: url("../fonts/Comfortaa/Comfortaa-Bold.eot");
+  src: url("../fonts/Comfortaa/Comfortaa-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Comfortaa/Comfortaa-Bold.woff") format("woff"), url("../fonts/Comfortaa/Comfortaa-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "comfortaa";
+  font-weight: 100;
+  font-style: normal;
+  src: url("../fonts/Comfortaa/Comfortaa-Light.eot");
+  src: url("../fonts/Comfortaa/Comfortaa-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Comfortaa/Comfortaa-Light.woff") format("woff"), url("../fonts/Comfortaa/Comfortaa-Light.ttf") format("truetype"); }
 
 @font-face {
   font-family: "Font Awesome 5 Free";
@@ -14092,6 +14099,9 @@ body input:required:valid,
 body textarea:required:valid {
   color: #666; }
 
+body::-webkit-scrollbar {
+  display: none; }
+
 html, body {
   height: 100%; }
 
@@ -14100,7 +14110,7 @@ body {
   min-width: 320px;
   position: relative;
   line-height: 1.65;
-  font-family: "roboto-example", sans-serif;
+  font-family: "comfortaa", sans-serif;
   overflow-x: hidden; }
 
 .img-responsive {
@@ -14112,12 +14122,137 @@ body {
   text-align: center; }
 
 ::-moz-selection {
-  background-color: orange;
+  background-color: #FFC000;
   color: #fff; }
 
 ::selection {
-  background-color: orange;
+  background-color: #FFC000;
   color: #fff; }
+
+.home-background {
+  background-image: url("../img/home-bg.jpg");
+  height: 100vh;
+  background-position: center;
+  -webkit-background-size: cover;
+          background-size: cover; }
+
+.home-background::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0; }
+
+.home .navbar-brand {
+  position: relative; }
+  .home .navbar-brand img {
+    width: 150px; }
+
+.home .transparent-nav .collapse .navbar-nav .nav-item .nav-link {
+  color: #fff !important; }
+
+.home .row {
+  position: relative;
+  z-index: 1; }
+  .home .row .container .welcome, .home .row .container .uzbekistan, .home .row .container .motto {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    position: relative; }
+  .home .row .container .welcome {
+    margin-top: 15vh;
+    font-size: 5em;
+    font-weight: 900; }
+  .home .row .container .uzbekistan {
+    bottom: 30px;
+    font-size: 3em;
+    font-weight: 100; }
+  .home .row .container .motto {
+    font-weight: 900;
+    bottom: 40px;
+    font-size: 1.7em; }
+  .home .row .container .gold {
+    color: #FFC000; }
+
+.home .row .form-search {
+  width: 50%;
+  border-bottom: 2px solid #fff; }
+  .home .row .form-search .search-input {
+    background-color: transparent;
+    border: none;
+    width: 90%;
+    color: #fff;
+    outline: none;
+    padding: 0 20px; }
+  .home .row .form-search .search-input::-webkit-input-placeholder {
+    color: #fff; }
+  .home .row .form-search .search-input::-moz-placeholder {
+    color: #fff; }
+  .home .row .form-search .search-input:-ms-input-placeholder {
+    color: #fff; }
+  .home .row .form-search .search-input::-ms-input-placeholder {
+    color: #fff; }
+  .home .row .form-search .search-input::placeholder {
+    color: #fff; }
+  .home .row .form-search .submit {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    outline: none;
+    cursor: pointer; }
+
+.home .row .container .center {
+  text-align: center;
+  margin-top: 50px; }
+  .home .row .container .center .discover {
+    color: #FFC000;
+    border: 2px solid #FFC000;
+    padding: 2px 30px;
+    -webkit-border-radius: 50px;
+            border-radius: 50px;
+    text-align: center;
+    font-weight: 900;
+    text-decoration: none; }
+
+.home-second {
+  height: 100vh; }
+  .home-second .gold-line {
+    width: 15%;
+    background-color: #FFC000;
+    height: 3px;
+    position: relative;
+    top: 20vh; }
+  .home-second div .page-title {
+    margin-top: 15vh;
+    font-size: 1.5em;
+    color: #333;
+    font-weight: 900; }
+    .home-second div .page-title .gold {
+      color: #FFC000;
+      position: relative;
+      left: 10%; }
+  .home-second .article-text {
+    text-align: justify; }
+
+body .mm-menu_offcanvas {
+  z-index: 2000; }
+
+body .mm-page__blocker {
+  z-index: 1999; }
+
+body .light-nav {
+  z-index: 1000;
+  background-color: #fff;
+  -webkit-box-shadow: 0 5px 10px silver;
+          box-shadow: 0 5px 10px silver; }
+
+body .collapse .navbar-nav .nav-item .nav-link {
+  color: #333; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
