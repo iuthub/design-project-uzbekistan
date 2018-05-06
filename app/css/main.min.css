@@ -14102,6 +14102,59 @@ body textarea:required:valid {
 body::-webkit-scrollbar {
   display: none; }
 
+audio {
+  background-color: transparent;
+  display: none; }
+
+audio::-webkit-media-controls {
+  background-color: transparent; }
+
+audio::-webkit-media-controls-play-button {
+  display: none; }
+
+audio::-internal-media-controls-download-button {
+  display: none !important; }
+
+audio::-webkit-media-controls-enclosure {
+  overflow: hidden !important; }
+
+audio::-webkit-media-controls-panel {
+  width: -webkit-calc(100% + 30px) !important;
+  width: calc(100% + 30px) !important; }
+
+audio::-webkit-media-controls-current-time-display {
+  display: none; }
+
+audio::-webkit-media-controls-time-remaining-display {
+  display: none; }
+
+audio::-webkit-media-controls-volume-slider-container {
+  display: none; }
+
+audio::-webkit-media-controls-volume-slider {
+  display: none; }
+
+audio::-webkit-media-controls-seek-back-button {
+  display: none; }
+
+audio::-webkit-media-controls-seek-forward-button {
+  display: none; }
+
+audio::-webkit-media-controls-fullscreen-button {
+  display: none; }
+
+audio::-webkit-media-controls-rewind-button {
+  display: none; }
+
+audio::-webkit-media-controls-return-to-realtime-button {
+  display: none; }
+
+audio::-webkit-media-controls-toggle-closed-captions-button {
+  display: none; }
+
+audio::-webkit-media-controls-mute-button {
+  display: none; }
+
 html, body {
   height: 100%; }
 
@@ -14112,11 +14165,6 @@ body {
   line-height: 1.65;
   font-family: "comfortaa", sans-serif;
   overflow-x: hidden; }
-
-.img-responsive {
-  display: block;
-  max-width: 100%;
-  height: auto; }
 
 .text-center {
   text-align: center; }
@@ -14220,7 +14268,7 @@ body {
     text-decoration: none; }
 
 .home-second {
-  height: 100vh; }
+  min-height: 100vh; }
   .home-second .gold-line {
     width: 15%;
     background-color: #FFC000;
@@ -14236,8 +14284,6 @@ body {
       color: #FFC000;
       position: relative;
       left: 10%; }
-  .home-second .article-text {
-    text-align: justify; }
   .home-second .article .quotation {
     width: 400px;
     margin: auto; }
@@ -14245,10 +14291,70 @@ body {
       text-align: center;
       font-size: 2em;
       color: #FFC000; }
-    .home-second .article .quotation .author {
+    .home-second .article .quotation-author {
       font-size: 1em;
       text-align: right;
       color: #333; }
+
+.home-third {
+  min-height: 200vh; }
+  .home-third .gold-line {
+    width: 15%;
+    background-color: #FFC000;
+    height: 3px;
+    position: relative;
+    top: 20vh; }
+  .home-third div .page-title {
+    text-align: right;
+    margin-top: 15vh;
+    margin-right: 7vw;
+    font-size: 1.5em;
+    color: #333;
+    font-weight: 900; }
+    .home-third div .page-title .gold {
+      color: #FFC000;
+      position: relative;
+      right: 30%; }
+  .home-third div .image-block {
+    -webkit-border-radius: 10px;
+            border-radius: 10px;
+    width: 100%;
+    height: 450px;
+    -webkit-background-size: cover;
+            background-size: cover;
+    background-position: center 10px; }
+  .home-third div .sub-navigation .sub-nav {
+    position: relative;
+    left: -20px;
+    list-style: none;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .home-third div .sub-navigation .sub-nav li {
+      display: inline-block; }
+      .home-third div .sub-navigation .sub-nav li a {
+        color: #777;
+        text-decoration: none; }
+      .home-third div .sub-navigation .sub-nav li a:hover {
+        font-weight: 900;
+        color: #FFC000;
+        border-bottom: 2px solid #FFC000; }
+    .home-third div .sub-navigation .sub-nav .active a {
+      font-weight: 900;
+      color: #FFC000;
+      border-bottom: 2px solid #FFC000; }
+  .home-third div .music .controls-player button {
+    background-color: transparent;
+    border: none;
+    outline: none; }
+    .home-third div .music .controls-player button i {
+      color: #FFC000;
+      cursor: pointer; }
 
 body .mm-menu_offcanvas {
   z-index: 2000; }

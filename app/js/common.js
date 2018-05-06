@@ -18,6 +18,17 @@ $('.discover').click(function(){
     scrollTop:$('.home-second').position().top
   }, 1000);
 });
+$('.play').click(function(){
+  $('.player').trigger('play');
+  $('.play').css('display', 'none');
+  $('.pause').css('display', 'block');
+});
+$('.pause').click(function(){
+  $('.player').trigger('pause');
+  $('.play').css('display', 'block');
+  $('.pause').css('display', 'none');
+})
+
 /*MMENU for Bootstrap*/
 // $(document).ready(function() {
 //    $(".navbar-collapse").mmenu({

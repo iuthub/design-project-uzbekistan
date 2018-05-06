@@ -84,7 +84,7 @@
 					font-weight: 900
 					text-decoration: none
 	&-second
-		height: 100vh
+		min-height: 100vh
 		.gold-line
 			width: 15%
 			background-color: $gold
@@ -102,8 +102,6 @@
 					position: relative
 					left: 10%
 		.article
-			&-text
-				text-align: justify
 			.quotation
 				width: 400px
 				margin: auto
@@ -111,7 +109,65 @@
 					text-align: center
 					font-size: 2em
 					color: $gold
-				.author
+				&-author
 					font-size: 1em
 					text-align: right
 					color: #333
+	&-third
+		min-height: 200vh
+		.gold-line
+			width: 15%
+			background-color: $gold
+			height: 3px
+			position: relative
+			top: 20vh
+		div
+			.page-title
+				text-align: right
+				margin-top: 15vh
+				margin-right: 7vw
+				font-size: 1.5em
+				color: #333
+				font-weight: 900
+				.gold
+					color: $gold
+					position: relative
+					right: 30%
+
+			.image-block
+				border-radius: 10px
+				width: 100%
+				height: 450px
+				background-size: cover
+				background-position: center 10px
+
+			.sub-navigation
+				.sub-nav
+					position: relative
+					left: -20px
+					list-style: none
+					display: flex
+					justify-content: space-between
+					li
+						display: inline-block
+						a
+							color: #777
+							text-decoration: none
+						a:hover
+							font-weight: 900
+							color: $gold
+							border-bottom: 2px solid $gold
+					.active
+						a
+							font-weight: 900
+							color: $gold
+							border-bottom: 2px solid $gold
+			.music
+				.controls-player
+					button
+						background-color: transparent
+						border: none
+						outline: none
+						i
+							color: $gold
+							cursor: pointer
