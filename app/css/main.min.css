@@ -14099,6 +14099,9 @@ body input:required:valid,
 body textarea:required:valid {
   color: #666; }
 
+body::-webkit-scrollbar {
+  display: none; }
+
 audio {
   background-color: transparent;
   display: none; }
@@ -14230,7 +14233,7 @@ body .collapse .navbar-nav .nav-item .nav-link {
     color: #fff;
     position: relative; }
   .home .row .container .welcome {
-    margin-top: 15vh;
+    margin-top: 25vh;
     font-size: 5em;
     font-weight: 900; }
   .home .row .container .uzbekistan {
@@ -14400,7 +14403,7 @@ body .collapse .navbar-nav .nav-item .nav-link {
   .home-fourth .serv {
     margin: 0 20px; }
     .home-fourth .serv-logo {
-      width: 80%; }
+      width: 60%; }
       .home-fourth .serv-logo img {
         width: 100%; }
     .home-fourth .serv-description {
@@ -14433,14 +14436,15 @@ body .collapse .navbar-nav .nav-item .nav-link {
   color: black; }
 
 .gold-line {
-  width: 15%;
+  width: 30vw;
+  background-color: #FFC000;
   height: 3px;
   position: relative;
-  top: 20vh;
-  background-color: #FFC000; }
+  top: 20vh; }
 
 .container .row .headings {
-  margin-top: 15vh; }
+  margin-top: 15vh;
+  background-color: #fff; }
   .container .row .headings-title {
     color: #333333;
       color-background-color: white;

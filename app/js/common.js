@@ -3,14 +3,14 @@ $(window).scroll(function(){
   var windowHeight = $(window).height()-50;
 
   if(scroll >= windowHeight){
-    $(".navbar").addClass("light-nav");
-    $(".navbar").removeClass("transparent-nav");
-    $('.img_logo').attr('src', 'img/logo_uzb_grey.svg');
+    $(".navbar-home").addClass("light-nav");
+    $(".navbar-home").removeClass("transparent-nav");
+    $('.img-logo').attr('src', 'img/logo_uzb_grey.svg');
   }
   else{
-    $(".navbar").addClass("transparent-nav");
-    $(".navbar").removeClass("light-nav");
-    $('.img_logo').attr('src', 'img/logo_uzb.svg');
+    $(".navbar-home").addClass("transparent-nav");
+    $(".navbar-home").removeClass("light-nav");
+    $('.img-logo').attr('src', 'img/logo_uzb.svg');
   }
 });
 $('.discover').click(function(){
@@ -46,7 +46,7 @@ owl.owlCarousel({
         },
         600:{
             items:3
-        },            
+        },
         960:{
             items:5
         },
