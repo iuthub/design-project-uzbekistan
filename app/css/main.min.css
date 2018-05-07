@@ -14199,6 +14199,7 @@ body .collapse .navbar-nav .nav-item .nav-link {
 
 .home-background {
   background-image: url("../img/home-bg.jpg");
+  background-attachment: fixed;
   height: 100vh;
   background-position: center;
   -webkit-background-size: cover;
@@ -14394,9 +14395,9 @@ body .collapse .navbar-nav .nav-item .nav-link {
     cursor: pointer; }
 
 .home-fourth {
-  margin-top: 50px;
-  min-height: 100vh; }
+  margin-top: 50px; }
   .home-fourth-heading {
+    margin-top: 90px;
     color: #333; }
     .home-fourth-heading span {
       font-weight: 900; }
