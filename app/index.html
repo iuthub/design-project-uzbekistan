@@ -340,11 +340,54 @@
 						</select>
 					</form>
 				</div>
+
 			</div>
+				<div class="container" style="height: 100vh">
+
+					<div class="category-guide">
+
+							<div class="owl-two owl-carousel owl-theme">
+
+								<div class="owl-carousel-item" style="background-image: url('img/0233654_b.jpg');">
+									<!-- <img src="img/0233654_b.jpg" alt=""> -->
+									<div class="title">
+										<p class="title-name">"Retro Fusion House"</p>
+										<p class="title description">
+											The Retro Fusion House restaurant is a restaurant with a fusion kitchen that looks like an illustrated book - whimsical ceiling patterns, different chandeliers, completely different from each other, colored velvet sofas, high, royal, armchairs.
+										</p>
+									</div>
+								</div>
+
+							</div>
+
+					</div>
+
+				</div>
 		</div>
 
 	</section>
-	<script src="js/scripts.min.js"></script>
+	<script src="js/scripts.min.js">
+
+	</script>
+	<script>
+		$('.owl-two').owlCarousel({
+			 loop:true,
+			 margin:100,
+			 nav:true,
+			 navText: [&#x27;next&#x27;,&#x27;prev&#x27;],
+			 responsive:{
+					 0:{
+							 items:1
+					 },
+					 600:{
+							 items:1
+					 },
+					 1000:{
+							 items:1
+					 }
+			 }
+	 });
+	</script>
 
 </body>
 </html>

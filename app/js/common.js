@@ -35,7 +35,7 @@ $(document).ready(function(){
 });
 });
 
-var owl = $('.owl-carousel');
+var owl = $('.owl-two');
 owl.owlCarousel({
     loop:true,
     // nav:true,
@@ -51,7 +51,7 @@ owl.owlCarousel({
             items:5
         },
         1200:{
-            items:6
+            items:1
         }
     }
 });
