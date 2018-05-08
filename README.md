@@ -1,5 +1,9 @@
 # Internet Programming: Design Project Assignment
 
-Find `ip_design_project.pdf` file in this folder, and refer to all the instructions given there. 
+### Team Details:
 
-You have to submit your project into this repository before 06.05.2018.
+1. Bekhzodkhon Makhkamov(U1610047)  - Designer + Frontend Developer;
+2. Dilorom Alieva(U1610061) 		- Designer + Frontend Developer;
+3. Bobur Bakhodirov(U1610052) 		- Frontend Developer;
+4. Oybek Amonov(U1610176) 			- Backend Developer;
+5. Bokhodir Urinboev(U1610249) 		- Backend Developer;
