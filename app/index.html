@@ -340,31 +340,76 @@
 						</select>
 					</form>
 				</div>
-
 			</div>
-				<div class="container" style="height: 100vh">
-
-					<div class="category-guide">
-
-							<div class="owl-two owl-carousel owl-theme">
-
-								<div class="owl-carousel-item" style="background-image: url('img/0233654_b.jpg');">
-									<!-- <img src="img/0233654_b.jpg" alt=""> -->
-									<div class="title">
-										<p class="title-name">"Retro Fusion House"</p>
-										<p class="title description">
-											The Retro Fusion House restaurant is a restaurant with a fusion kitchen that looks like an illustrated book - whimsical ceiling patterns, different chandeliers, completely different from each other, colored velvet sofas, high, royal, armchairs.
-										</p>
-									</div>
-								</div>
-
+			<div class="container" style="min-height: 100vh">
+				<div class="category-guide">
+					<div class="owl-two owl-carousel owl-theme">
+						<div class="owl-carousel-item" style="background-image: url('img/0233654_b.jpg');">
+							<!-- <img src="img/0233654_b.jpg" alt=""> -->
+							<div class="title">
+								<p class="title-name">"Retro Fusion House"</p>
+								<p class="title-description">
+									The Retro Fusion House restaurant is a restaurant with a fusion kitchen that looks like an illustrated book - whimsical ceiling patterns, different chandeliers, completely different from each other, colored velvet sofas, high, royal, armchairs.
+								</p>
+								<a href="" class="title-link">VIEW</a>
 							</div>
-
+						</div>
 					</div>
-
 				</div>
+			</div>
 		</div>
+	</section>
+	<section class="container-fluid home-fourth" id="register" style="min-height: 100vh">
 
+		<div class="row">
+			<div class="container">
+				<p class="home-fourth-heading text-center">
+					<img src="img/logo_uzb_grey.svg" alt="">
+					<span> / <i class="fas fa-user-circle"></i> Log In</span>
+				</p>
+			</div>
+		</div>
+		<div class="container">
+		<div class="row">
+				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 login-left">
+					<p class="login-left-text">
+					One way to control your trip is to be authorized in our service. We provide you Personal Cabinet where you can manage your journey in our country.
+					<br><br>
+					Also we will happy to organize for you <span class="gold">Guide</span> and other services such as:
+					<br>
+				</p>
+				<ul class="login-left-list gold">
+					<li>Ordering Taxi</li>
+					<li>Booking Hotel</li>
+					<li>Reserving Restaurants</li>
+				</ul>
+				</div>
+				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+						<div class="login-right">
+							<p class="login-right-heading text-center">
+								SIGN IN
+							</p>
+							<form action="">
+								<input type="text" class="input" placeholder="e-Mail or Login">
+								<input type="password" class="input" placeholder="Password">
+								<p><a href="">forgot password </a><input type="submit" class="submit" value="Sign in"></p>
+							</form>
+						</div>
+						<br><hr>
+						<div class="login-right">
+							<p class="login-right-heading text-center">
+								REGISTRATION
+							</p>
+							<form action="">
+								<input type="text" class="input" placeholder="e-Mail or Login">
+								<input type="password" class="input" placeholder="Password">
+								<input type="password" class="input" placeholder="Confirm Password">
+								<p><input type="submit" class="submit" value="Sign Up"></p>
+							</form>
+						</div>
+				</div>
+			</div>
+		</div>
 	</section>
 	<script src="js/scripts.min.js">
 
@@ -372,18 +417,22 @@
 	<script>
 		$('.owl-two').owlCarousel({
 			 loop:true,
-			 margin:100,
-			 nav:true,
-			 navText: [&#x27;next&#x27;,&#x27;prev&#x27;],
+			 responsiveClass:true,
+			 mouseDrag: true,
+			 touchDrag: true,
+			 margin: 10,
 			 responsive:{
 					 0:{
-							 items:1
+							 items:1,
+							 nav: true
 					 },
 					 600:{
-							 items:1
+							 items:1,
+							 nav: true
 					 },
 					 1000:{
-							 items:1
+							 items:1,
+							 nav: true
 					 }
 			 }
 	 });
