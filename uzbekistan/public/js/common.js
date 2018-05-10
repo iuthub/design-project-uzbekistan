@@ -30,12 +30,12 @@ $('.pause').click(function(){
 });
 
 $(function() {
-  $(document).ready(function(){
-    $(".owl-carousel").owlCarousel();
-  });
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel();
+});
 });
 
-var owl = $('.owl-one');
+var owl = $('.owl-carousel');
 owl.owlCarousel({
     loop:true,
     // nav:true,

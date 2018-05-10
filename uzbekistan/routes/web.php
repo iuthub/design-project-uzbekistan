@@ -11,42 +11,16 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+Route::get('/','PostsController@index');
+Route::get('/about','PagesController@about');
+Route::get('/services','PagesController@services');
+Auth::routes();
+Route::get('/dashboard', 'DashboardController@show');
 
-Route::get('/taxi', function () {
-    return view('taxi_order');
-});
-
-Route::get('/hotel', function () {
-    return view('hotel_order');
-});
-
-Route::get('/cuisine', function () {
-    return view('cuisine');
-});
-
-Route::get('/education', function () {
-    return view('education');
-});
-
-Route::get('/holidays', function () {
-    return view('holidays');
-});
-
-Route::get('/music', function () {
-    return view('music');
-});
-
-Route::get('/sport', function () {
-    return view('sport');
-});
-
-Route::get('/content', function () {
-    return view('content');
-});
-
-Route::get('/greathistory', function () {
-    return view('greathistory');
-});
+Route::resource('traditions', "TraditionsController");
+Auth::routes();
+Route::get('/home', 'HomeController@index')->name('home');
+Route::resource('posts','PostsController');

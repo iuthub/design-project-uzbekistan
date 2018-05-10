@@ -14198,7 +14198,7 @@ body .collapse .navbar-nav .nav-item .nav-link {
   color: #333; }
 
 .home-background {
-  background-image: url("../img/home-bg.jpg");
+  background-image: url("../storage/img/home-bg.jpg");
   background-attachment: fixed;
   height: 100vh;
   background-position: center;
@@ -14638,6 +14638,9 @@ body .collapse .navbar-nav .nav-item .nav-link {
         font-size: 18px;
         font-weight: 900;
         text-align: center; }
+
+             /*   ..:: BOB   start from here ! ! ! ::..   */
+
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
