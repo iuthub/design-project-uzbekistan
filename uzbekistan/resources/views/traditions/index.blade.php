@@ -53,7 +53,7 @@
 
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 carousel">
                     
-                <div class="owl-carousel" >
+                <div class="owl-one owl-carousel" >
                   <div class="image-block">
                   <a class="carousel-link" href="/traditions/{{ $types[0]->name }}"><img class="image" src=" /storage/img/about/sport2.jpg" alt="general"><p>Sport</p></a>
 

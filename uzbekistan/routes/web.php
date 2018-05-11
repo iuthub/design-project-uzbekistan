@@ -14,13 +14,15 @@
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::get('/','PostsController@index');
+// Route::resource('posts/edit','PostsController@edit');
+
+Route::resource('/','PostsController');
 Route::get('/about','PagesController@about');
 Route::get('/services','PagesController@services');
 Auth::routes();
-Route::get('/dashboard', 'DashboardController@show');
+Route::get('/dashboard', 'DashboardController@index');
 
 Route::resource('traditions', "TraditionsController");
 Auth::routes();
-Route::get('/home', 'HomeController@index')->name('home');
+
 Route::resource('posts','PostsController');

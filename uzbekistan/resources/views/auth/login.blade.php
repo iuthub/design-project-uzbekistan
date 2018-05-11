@@ -98,14 +98,14 @@
                             <p class="login-right-heading text-center">
                                 SIGN IN
                             </p>
-                            <form action="{{ route('login') }}">
+                            <form method="POST" action="{{ route('login') }}">
                                 @csrf
 
-                                <input type="text" id="email" class="input{{ $errors->has('email')? ' is-invalid' : '' }}" name="email" value=" {{ old('email')}} " required autofocus placeholder="e-Mail or Login">
+                                <input type="text" id="name" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value=" {{ old('name')}} " required autofocus placeholder="username">
 
-                                @if ($errors->has('email'))
+                                @if ($errors->has('name'))
                                     <span class="invalid-feedback">
-                                        <strong>{{ $error->first('email')}}</strong>
+                                        <strong>{{ $error->first('name')}}</strong>
                                     </span>
                                 @endif
 

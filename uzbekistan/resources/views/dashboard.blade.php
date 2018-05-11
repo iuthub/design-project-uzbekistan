@@ -1,5 +1,4 @@
 @extends('layouts.app')
-
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
@@ -17,10 +16,10 @@
                     <a href="/posts/create" class="btn btn-primary">Create Post </a>
                     <a href="/traditions/create" class="btn btn-primary">Create Tradition </a>
                     {{-- <h3>Your Blog Posts</h3> --}}
-                    {{-- @if(count($posts)>0)
+                    @if(count($posts)>0)
                     <table class="table table-striped">
                         <tr>
-                               <th>Title</th>
+                               <th>Posts</th>
                                <th></th>
                                <th></th>    
                         </tr>
@@ -28,16 +27,39 @@
                         <tr>
                                 <td>{{ $post->title }}</td>
                               
-                                <td><a href="/posts/{{ $post->id }}/edit" class="btn btn-default" >Edit</a>
+                                <td><a href="/posts/{{$post->id}}/edit/" class="btn btn-primary" >Edit</a>
                                 {!! Form::open(['action'=>['PostsController@destroy',$post->id], 'method'=>'POST' , 'class'=>'pull-right']) !!}
-                                {{   Form::hidden('_method', 'DELETE') }}
+                                {{ Form::hidden('_method', 'DELETE') }}
                                 {{ Form::submit('Delete', ['class'=>'btn btn-danger']) }}
                                 {!! Form::close() !!}
                                 </td>
                         </tr>
                         @endforeach 
                     </table>   
-                    @endif --}}
+                    @endif
+
+                      @if(count($traditions)>0)
+                    <table class="table table-striped">
+                        <tr>
+                               <th>Tradition</th>
+                               <th></th>
+                               <th></th>    
+                        </tr>
+                        @foreach($traditions as $i)
+                        <tr>
+                                <td>{{ $i->title }}</td>
+                              
+                                <td><a href="/traditions/{{$i->type}}/edit/" class="btn btn-primary" >Edit</a>
+                                {!! Form::open(['action'=>['TraditionsController@destroy',$i->id], 'method'=>'POST' , 'class'=>'pull-right']) !!}
+                                {{ Form::hidden('_method', 'DELETE') }}
+                                {{ Form::submit('Delete', ['class'=>'btn btn-danger']) }}
+                                {!! Form::close() !!}
+                                </td>
+                        </tr>
+                        @endforeach 
+                    </table>   
+                    @endif
+
                 </div>
             </div>
         </div>

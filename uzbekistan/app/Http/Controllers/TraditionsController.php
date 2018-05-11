@@ -73,12 +73,22 @@ class TraditionsController extends Controller
 
 
         ///////
+            $type=new Type;
+            $paragraph=new Paragraph;
+            $image= new Image;
             $post =  new Tradition;
+            $type->name== $request->input('name');
+            $type->tradition_id=$post->id;
+            $paragraph->paragraph=$request->input('description');
+            $paragraph->tradition_id=$post->id;
+            $image->img = $fileNameToStore;
+            $image->tradition_id=$post->id;
             $post->name = $request->input('name');
-            $post->description = $request->input('description');
             $post->user_id = auth()->user()->id;
-            $post->img = $fileNameToStore;
             $post->save();
+            $type->save();
+            $image->save();
+            $paragraph->save();
             return redirect('/traditions')->with('success','Tradition Created');
     }
 
@@ -102,14 +112,14 @@ class TraditionsController extends Controller
      */
     public function edit($id)
     {
-         $post= Tradition::find($id);
+        $tr = Tradition::where('type','=',$id)->get();
 
-        //chech for correct user
-        if(auth()->user()->type !== 1)
+        //chech for correct user000
+        if(auth()->user()->user_type !== 1)
         {
-            return redirect('/traditions')->with('error', 'Unauthorized Page');    
+            return redirect('/');    
         }
-        return view('traditions.edit')->with('tradition', $post);
+        return view('traditions.edit')->with('traditions', $tr)->with('types', Type::get());
     }
 
     /**
@@ -143,17 +153,26 @@ class TraditionsController extends Controller
             {
                 $fileNameToStore = 'noimage.png';
             }
-
-
-        ///////
-            $post = Tradition::find($id);;
+        
+            $type=Type::find($id);
+            $paragraph= Paragraph::find($id);
+            $image= Image::find($id);
+            $post= Tradition::find($id);
+            $type->name= $request->input('name');
+            $type->tradition_id=$post->id;
+            $paragraph->paragraph=$request->input('description');
+            $paragraph->tradition_id=$post->id;
+            $image->img = $fileNameToStore;
+            $image->tradition_id=$post->id;
             $post->name = $request->input('name');
-            $post->description = $request->input('description');
             $post->user_id = auth()->user()->id;
-            $post->img = $fileNameToStore;
             $post->save();
+            $type->save();
+            $image->save();
+            $paragraph->save();
             return redirect('/traditions')->with('success','Tradition Created');
     }
+
 
     /**
      * Remove the specified resource from storage.
@@ -161,6 +180,7 @@ class TraditionsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+
     public function destroy($id)
     {
           $post= Tradition::find($id);
@@ -170,11 +190,6 @@ class TraditionsController extends Controller
             return redirect('/posts')->with('error', 'Unauthorized Page');    
         }
 
-        if($post->img !='noimage.png')
-        {
-            Storage::delete('public/traditions/'.$post->img);
-        }
-      $post->delete();
       return redirect('/traditions')->with('success','Tradition Removed');
     }
     }

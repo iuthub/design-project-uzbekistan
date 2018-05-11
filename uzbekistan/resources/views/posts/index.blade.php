@@ -146,11 +146,11 @@
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                     <div class="sub-navigation">
                         <ul class="sub-nav">
-                            <li class="active"><button id="music">Music</button></li>
-                            <li><button id="education">Education</button></li>
-                            <li><button id="holidays">Holidays</button></li>
-                            <li><button id="cuisine">Cuisine</button></li>
-                            <li><button id="sport">Sport</button></li>
+                            <li class="ls ms active"><button id="music">Music</button></li>
+                            <li class="ls ed"><button id="education">Education</button></li>
+                            <li class="ls hl"><button id="holidays">Holidays</button></li>
+                            <li class="ls cs"><button id="cuisine">Cuisine</button></li>
+                            <li class="ls sp"><button id="sport">Sport</button></li>
                         </ul>
                     </div>
                     <div class="sub-content music">
@@ -184,7 +184,7 @@
     <div class="container read">
             <div class="row">
                 <div class="read-more ml-auto">
-                    <a href="" class="ml-auto"><i class="fas fa-ellipsis-h"></i> Read More</a>
+                    <a href="traditions/music" class="ml-auto culture-link"><i class="fas fa-ellipsis-h"></i> Read More</a>
                 </div>
             </div>
         </div> <!-- READ MORE -->
@@ -331,5 +331,25 @@
             </div>
         </div>
     </section>
+    <script>
+        $(function(){
+            $(document).ready(function(){
+                $(".owl-carousel").owlCarousel()
+            })
+        });
+        
+        var owl=$(".owl-two");
+        owl.owlCarousel({
+            loop:true,
+            margin:10,
+            responsive:
+            {
+                0:{items:1},
+                600:{items:1},
+                960:{items:1},
+                1200:{items:1}
+            }
+        });
+    </script>
     
 

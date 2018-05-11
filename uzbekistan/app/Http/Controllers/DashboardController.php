@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\User;
+use App\Post;
+use App\Tradition;
 
 class DashboardController extends Controller
 {
@@ -24,14 +26,17 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        $title = 'Welcome to Uzbekistan';
+        $tradition=Tradition::all();
+        $posts=Post::all();
         $user_id = auth()->user()->id;
-        $user_type =auth()->user()->type;
         $user= User::find($user_id);
+        $user_type = $user->user_type;
         if($user_type ==1){
-        return view('dashboard')->with('posts',$user->posts);
+        return view('dashboard')->with('posts',$posts)->with('traditions',$tradition);
         }else{
-            return view('posts.index')
+            return view('posts.index')->with('posts', $posts);
         }
+        
     }
+
 }
