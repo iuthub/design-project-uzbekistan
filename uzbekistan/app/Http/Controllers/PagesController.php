@@ -30,4 +30,25 @@ public function services()
     
 }
 
+public function taxi() 
+{
+        
+        return view('services.taxi_order');
+    
+}
+
+public function hotel() 
+{
+       
+  return view('services.hotel_order');
+    
+}
+
+public function rest() 
+{
+       
+        
+        return view('services.restaurant_reserving');
+    
+}
 }

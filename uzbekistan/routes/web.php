@@ -17,12 +17,15 @@
 // Route::resource('posts/edit','PostsController@edit');
 
 Route::resource('/','PostsController');
-Route::get('/about','PagesController@about');
-Route::get('/services','PagesController@services');
+Route::resource('posts','PostsController');
+Route::get('/posts/{id}','PostsController@show');
+Route::resource('/home','HomeController');
 Auth::routes();
 Route::get('/dashboard', 'DashboardController@index');
-
+Route::get('/services/restaurant_reserving', 'PagesController@rest');
+Route::get('/services/taxi_order', 'PagesController@taxi');
+Route::get('/services/hotel_order', 'PagesController@hotel');
 Route::resource('traditions', "TraditionsController");
 Auth::routes();
 
-Route::resource('posts','PostsController');
+

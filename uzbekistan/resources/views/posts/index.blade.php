@@ -211,7 +211,7 @@
                             Book your taxi in a flash. How about a 5-Star Taxi? Or one with a regular driver? Book now – or in advance. And watch it arrive in real time – on your phone
                         </p>
                         <div class="serv-order">
-                            <a href="" class="serv-order-btn text-center">
+                            <a href="/services/taxi_order" class="serv-order-btn text-center">
                                 ORDER
                             </a>
                         </div>
@@ -227,7 +227,7 @@
                             European cuisine and local specialities are served in the elegant restaurant with grand piano. The Vena café-bar offers a range of hot and cold drinks, and there is also a snack bar on site.
                         </p>
                         <div class="serv-order">
-                            <a href="" class="serv-order-btn text-center">
+                            <a href="/services/hotel_order" class="serv-order-btn text-center">
                                 ORDER
                             </a>
                         </div>
@@ -243,7 +243,7 @@
                             Make online reservations, read restaurant reviews from diners, and earn points towards free meals. OpenTable is a real-time online reservation network for fine dining restaurants.
                         </p>
                         <div class="serv-order">
-                            <a href="" class="serv-order-btn text-center">
+                            <a href="/services/restaurant_reserving" class="serv-order-btn text-center">
                                 ORDER
                             </a>
                         </div>
